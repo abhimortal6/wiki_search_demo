@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:wiki_search/utils/constants/app_constants.dart';
 import 'package:wiki_search/utils/constants/color_constants.dart';
+import 'package:wiki_search/utils/navigation_helper.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
