@@ -2,7 +2,7 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
-import 'package:wiki_search/models/response_data_model.dart';
+import 'package:wiki_search/models/global/response_data_model.dart';
 import 'package:wiki_search/services/network_check.dart';
 import 'package:wiki_search/utils/pretty_json_print.dart';
 import 'package:wiki_search/widgets/loader_widget.dart';

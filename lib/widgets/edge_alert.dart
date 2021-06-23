@@ -3,12 +3,12 @@ library edge_alert;
 import 'package:flutter/material.dart';
 
 class EdgeAlert {
-  static final int LENGTH_SHORT = 1; //1 seconds
-  static final int LENGTH_LONG = 2; // 2 seconds
-  static final int LENGTH_VERY_LONG = 3; // 3 seconds
+  static const int LENGTH_SHORT = 1; //1 seconds
+  static const int LENGTH_LONG = 2; // 2 seconds
+  static const int LENGTH_VERY_LONG = 3; // 3 seconds
 
-  static final int TOP = 1;
-  static final int BOTTOM = 2;
+  static const int TOP = 1;
+  static const int BOTTOM = 2;
 
   static void show(BuildContext context,
       {String? title, String? description, int? duration, int? gravity, Color? backgroundColor, IconData? icon}) {
@@ -161,21 +161,17 @@ class OverlayWidget extends StatelessWidget {
               child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
-              title == null
-                  ? Container()
-                  : Padding(
-                      padding: EdgeInsets.only(bottom: 10),
-                      child: Text(
-                        title,
-                        style: TextStyle(color: Colors.white, fontSize: 22),
-                      ),
-                    ),
-              description == null
-                  ? Container()
-                  : Text(
-                      description,
-                      style: TextStyle(color: Colors.white, fontSize: 14),
-                    )
+              Padding(
+                padding: EdgeInsets.only(bottom: 10),
+                child: Text(
+                  title,
+                  style: TextStyle(color: Colors.white, fontSize: 22),
+                ),
+              ),
+              Text(
+                description,
+                style: TextStyle(color: Colors.white, fontSize: 14),
+              )
             ],
           )),
         ],

@@ -19,9 +19,9 @@ class ResponseData {
     return ResponseData(
       statusCode: response.statusCode,
       ok: (response.statusCode == 200 || response.statusCode == 201),
-      data: parsedJson['data'] != null ? parsedJson['data'] : null,
+      data: parsedJson != null ? parsedJson : null,
       rawResponseBody: response.body,
-      okAndContainsData: (response.statusCode == 200 || response.statusCode == 201) && (parsedJson['data'] != null),
+      okAndContainsData: (response.statusCode == 200 || response.statusCode == 201) && (parsedJson != null),
       message: parsedJson['message'] != null ? parsedJson['message'] : "",
       errors: parsedJson['errors'] != null
           ? parsedJson['errors'].runtimeType == String

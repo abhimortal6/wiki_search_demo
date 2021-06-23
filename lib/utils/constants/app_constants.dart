@@ -1,3 +1,3 @@
 class AppConstants {
-  static const String APP_NAME = "WIKI SEARCH";
+  static const String APP_NAME = "Wiki Search";
 }
