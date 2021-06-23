@@ -8,4 +8,4 @@ class ApiConstants {
       "?action=query&format=json&prop=pageimages%7Cpageterms&generator=prefixsearch&redirects=1&formatversion=2&piprop=thumbnail&pithumbsize=50&pilimit=10&wbptterms=description&gpssearch=";
 }
 
-enum ApiStatus { idle, started, completed, loading, searching, empty, failed, timeout, noNetwork }
+enum ApiStatus { idle, started, completed, noData, loading, searching, empty, failed, timeout, noNetwork, cached }

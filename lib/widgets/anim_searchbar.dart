@@ -117,7 +117,7 @@ class _AnimSearchBarState extends State<AnimSearchBar> with SingleTickerProvider
           boxShadow: [
             BoxShadow(
               color: Colors.black26,
-              spreadRadius: -10.0,
+              spreadRadius: -5.0,
               blurRadius: 10.0,
               offset: Offset(0.0, 10.0),
             ),
