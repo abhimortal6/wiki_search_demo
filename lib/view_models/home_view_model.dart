@@ -69,6 +69,7 @@ class HomeViewModel with ChangeNotifier {
               backgroundColor: Colors.red);
         }
       } else {
+        //checking if term is cached
         String? _cachedResponse = box.get(searchBarTextFieldController.text.trim());
         if (_cachedResponse != null) {
           EdgeAlert.show(context,

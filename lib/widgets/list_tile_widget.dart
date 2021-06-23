@@ -52,9 +52,14 @@ class ListTileWidget extends StatelessWidget {
                           "Description: ",
                           style: TextStyle(color: Colors.grey, fontSize: 10),
                         ),
-                        Text(
-                          _description ?? "",
-                          style: TextStyle(color: Colors.black, fontSize: 12),
+                        Container(
+                          height: 45,
+                          child: Text(
+                            _description ?? "",
+                            maxLines: 3,
+                            overflow: TextOverflow.ellipsis,
+                            style: TextStyle(color: Colors.black, fontSize: 12),
+                          ),
                         ),
                       ],
                     ),
